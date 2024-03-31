@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <head>
     <title> Calculator BMI</title>
-    <link rel="css/sylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <script src="js/script.js"></script>
 
+<body>
+    <header>
+        <h1>CALCULATOR BMI</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="form">
+                <h2>Form Calculator BMI</h2> 
+                <p class="paragraph">
+                    Berat badan ideal adalah impian semua orang,
+                    Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,
+                    berat badan ideal juga menandakan tubuh yang sehat, Bagaimana denganmu? 
+                    yuk, hitung sekarang di kalkulator BMI.
+                </p>
+                <section>
+                    <div>
+                    <label>Jenis Kelamin</label> </br>
+                         <Input type="radio" id="sex-man"><label for="sex-man">Laki-Laki</label>
+                         <Input type="radio" id="sex-woman"><label for="sex-woman">Perempuan</label>
+                    </div>
+                    <div>
+                    <label>Berat Badan (kg)</label> </br>
+                      <Input type="number">
+                    </div>
+                    <div>
+                        <label>Usia(Tahun)</label> </br>
+                        <Input type="number">  
+                    </div>
+                    <div>
+                        <label>Tinggi Badan(Cm)</label> </br>
+                        <Input type="number"></br>
+                            <button type="button">HITUNG BMI</button> <button type="button">Reset</button>
+                    </div>
+
+                </section>
+            </div>
+            <div class="result">
+                <h2>Hasil Pengukuran</h2>
+                <section class="count">
+                    <h4>Berat badan lebih</h4>
+                    <h1>0</h1>
+                    <h4>Anda memiliiki berat badan berlebihan</h4>
+                    <button class="button">Download hasil BMI</button>
+                </section>
+            </div>
+        </div>
+        <div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

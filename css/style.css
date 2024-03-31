@@ -1,0 +1,19 @@
+.main-container {
+    display: flex;
+}
+
+header>h1 {
+    text-align: center;
+    color:dimgrey;
+}
+.form,.result {
+    background-color: aqua;
+    width: 100%;
+    border: 1px solid;
+}
+.paragraph {
+    padding-left: 25px;
+}
+.count {
+    text-align: center;
+}
