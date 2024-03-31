@@ -6,14 +6,61 @@ header>h1 {
     text-align: center;
     color:dimgrey;
 }
+.form-count {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgb(228, 225, 225);
+}
 .form,.result {
-    background-color: aqua;
+    
     width: 100%;
     border: 1px solid;
 }
 .paragraph {
     padding-left: 25px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.result-count {
+    text-align: center;
+    background-color: rgb(228, 225, 225);
+
+}
+.sex {
+    margin: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.label, .label2, .label3 {
+    padding: 25px;
+    padding-top: 0px;
+}
+.button-bmi{
+    margin-inline: 25px;
+    border: 0px;
+}
+.button-bmi>button {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 0px;
+    padding: 7px;
+}
+.doctor {
+    text-align: center;
+    background-color: rgb(228, 225, 225);
+    padding: 10px;
+}
+.button-doctor {
+    background-color:rgb(0, 225, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px;
+    color: white;
+}
+.doctor>h4 {
+    margin-bottom: 0px;
 }
 .count {
-    text-align: center;
+    background-color: rgb(3, 68, 128);
+    color: whitesmoke;
 }
