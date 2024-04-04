@@ -5,9 +5,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>CALCULATOR BMI</h1>
-    </header>
+    <header><h1>CALCULATOR BMI</h1></header>
     <main>
         <div class="main-container">
             <div class="form">
@@ -19,29 +17,35 @@
                     yuk, hitung sekarang di kalkulator BMI.
                 </p>
                 <section class="form-count">
+                
                     <div class="sex">
-                    <label>Jenis Kelamin</label> </br>
-                         <Input type="radio" id="sex-man"><label for="sex-man" style="padding-right: 40px;">Laki-Laki</label>
-                         <Input type="radio" id="sex-woman"><label for="sex-woman">Perempuan</label>
+                         <label for="gender">Jenis Kelamin</label> <br>
+                         <input type="radio" id="male" name="gender" value="male">
+                         <label for="male">Laki-Laki</label>
+                         <input type="radio" id="female" name="gender" value="female">
+                         <label for="female">Perempuan</label><br><br>
                     </div>
+                    <form action="result">
                     <div>
                         <div class="label">
-                         <label>Berat Badan (kg)</label> </br>
-                         <Input type="number">
+                            <label>Usia(Tahun)</label> <br><br>
+                            <input type="number" placeholder="Masukan usia anda" style="width: 50%;" >
                         </div>
                         <div class="label2">
-                         <label>Usia(Tahun)</label> </br>
-                         <Input type="number">  
+                            <label for="weight">Berat Badan (kg)</label> <br><br>
+                            <input type="number" id="weight" placeholder="Masukan berat badan anda" style="width: 50%;"> <br>
                         </div>
                        <div class="label3">
-                            <label>Tinggi Badan(Cm)</label> </br>
-                            <Input type="number"></br>
+                            <label for="height">Tinggi Badan(Cm)</label> <br><br>
+                            <Input type="number" id="height" placeholder="Masukan tinggi badan anda" style="width: 50%;"></br>
                         </div>
                     </div>
                 
                     <div class="button-bmi">
-                        <button type="button" class="count">Hitung BMI</button> <button type="button">Reset</button>
+                        <button type="button" id="count">Hitung BMI</button>
+                        <input type="reset" value="Reset">
                     </div>
+                    </form>
                 </section>
                     <h4>Keunggulan Fitur</h4>
                     <ol>
@@ -63,20 +67,31 @@
                     <p>
                         kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum
                         index masa tubuh (atau BMI) di hitung sebagai berat badan anda(dalam kilogram) dibagi dengan kuadrat tinggi badan anda
-                        (dalam meter) atau BMI = Kg/M2
+                        (dalam meter) atau BMI = Kg/M<sup>2</sup>
                     </p>
                      </div>
-                     <div class="result">
+                     <div class="a">
                          <h2>Hasil Pengukuran</h2>
                 <section class="result-count">
-                    <h4>Berat Badan Lebih</h4>
-                    <h1>0</h1>
-                    <h4>Anda memiliiki berat badan berlebihan</h4>
-                    <button class="button">Download hasil BMI</button>
-                </section>
-                <div class="button-konsultasi">
-                    <button type="button">Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button type="button">Regristasi Online Ahli Gizi</button>
+                   
+                    <p id="nilai" >Masukan Nilai </p>
+                    <h3 id="result"> 0 </h3>
+                    <p id="catagori">Belum ada nilainya</p>
+                   
+                    <button onclick="location.href='halaman_baru.html'" class="button">Download hasil BMI</button>
+                
+                </section> 
+                <div>
+                    <p id="hasil">Hasil BMI anda ......... <br><br>
+                        Silahkan masukan nilai (Berat badan,Tinggi badan), agar anda 
+                        mengetahui berapa berat badan anda apakah sudah sesuai dengan 
+                        berat badan ideal sesuai BMI yang telah menjadi acuan dalam kesehatan. 
+                    </p>
+                    <p>Dan jangan lupa untuk selalu konsultasi dengan ahli gizi.</p>
+                </div>
+                <div>
+                    <button type="button" onclick="location.href='halaman_baru.html'" class="button-kag" >Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button type="button" onclick="location.href='halaman_baru.html'" class="button-roag" onclick="pindah()">Regristasi Online Ahli Gizi</button>
                 </div>
                 <p>
                     BMI sepenuhnya tidak mewakili diagnosis secara menyeluruh dari kesehatan tubuh dan resiko penyakit
@@ -91,8 +106,8 @@
                         <dd>osteoarthritis</dd>
                     </dl>
                     <div>
-                        <button type="button" class="button-doctor">Konsultasi Dokter Via Aplikasi</button>
-                        <button type="button" class="button-doctor">Regristasi Online Sekarang</button>
+                        <button type="button" onclick="location.href='halaman_baru.html'" class="button-doctor">Konsultasi Dokter Via Aplikasi</button>
+                        <button type="button" onclick="location.href='halaman_baru.html'" class="button-doctor-b">Regristasi Online Sekarang</button>
                     </div>
                 </section>
             </div>

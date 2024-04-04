@@ -1,5 +1,15 @@
 .main-container {
     display: flex;
+    width: 100%;
+}
+.form {
+    padding-right: 40px;
+}
+.a{
+    padding-left: 40px;
+}
+.form,.a{
+    width: 50%;
 }
 
 header>h1 {
@@ -9,24 +19,28 @@ header>h1 {
 .form-count {
     padding-top: 3px;
     padding-bottom: 3px;
-    background-color: rgb(228, 225, 225);
-}
-.form,.result {
-    
-    width: 100%;
-    border: 1px solid;
-}
+    background-color: rgb(228, 225, 225);}
 .paragraph {
     padding-left: 25px;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 .result-count {
+    padding-block: 10px;
     text-align: center;
     background-color: rgb(228, 225, 225);
 
 }
+#nilai{
+    margin: 5px;
+}
+#result{
+    margin: 0px;
+    font-size: 40px;
+
+}
 .sex {
+    padding-right: 40px;
     margin: 30px;
     margin-bottom: 15px;
     margin-top: 10px;
@@ -39,10 +53,40 @@ header>h1 {
     margin-inline: 25px;
     border: 0px;
 }
+.button{
+    padding-block: 5px;
+    background-color: rgb(3, 68, 128);
+    color: white;
+    border-radius: 5px;
+    border: 1px;
+}
+.button-kag{
+    border-radius: 5px;
+    padding-block: 5px;
+    background-color: rgb(3,68,128);
+    color: white;
+    margin-right: 10px;
+    border: 1px;
+}
+.button-roag{
+    border-radius: 5px;
+    padding-block: 5px;
+    color: white;
+    background-color: rgb(3,68,128);
+    border: 1px;
+
+}
+.button-bmi>input{
+    border-width: 1px;
+    border-radius: 5px;
+    width: 80px;
+    padding-block: 6px;
+}
 .button-bmi>button {
+    margin-right: 30px;
     margin-bottom: 10px;
     border-radius: 3px;
-    border: 0px;
+    border:0px;
     padding: 7px;
 }
 .doctor {
@@ -51,16 +95,22 @@ header>h1 {
     padding: 10px;
 }
 .button-doctor {
-    background-color:rgb(0, 225, 255);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 2px;
+    background-color:rgb(3, 68, 128);
+    padding-block: 5px;
+    border-radius: 5px;
+    border: 1px;
     color: white;
+    margin-right: 5pxs;
 }
-.doctor>h4 {
-    margin-bottom: 0px;
+.button-doctor-b{
+    background-color: rgb(3, 68, 128);
+    padding-block: 5px;
+    border-radius: 5px;
+    color : white;
+    border: 1px;
+    margin-left: 5px;
 }
-.count {
+#count{
     background-color: rgb(3, 68, 128);
     color: whitesmoke;
 }
